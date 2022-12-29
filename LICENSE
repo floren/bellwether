@@ -1,0 +1,3 @@
+The 3d models (case/) and the circuit + PCB layout (board/) are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+The firmware code is derived from Microchip's Mouse HID demo code and is therefore licensed under the Apache license (see LICENSE.firmware)
