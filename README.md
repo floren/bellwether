@@ -2,6 +2,12 @@
 
 This repo should contain everything you need to make a [Bellwether mouse](https://jfloren.net/bellwether.html).
 
+Note that I've made several of these myself, but it's possible that I've forgotten a step or component somewhere.
+
+I'm willing to answer questions to the best of my ability. I'll also consider assembling some portions of the mouse and mailing it out; send me an email if you want this.
+
+The 3d models and the circuit are CC BY-NC-SA licensed. I believe this means that "group buys" (where 1 person coordinates ordering a bunch of PCBs and parts) are ok under this model.
+
 ## 3D-printed case
 
 Inside the case/ subdirectory you'll find two FreeCAD files, "base" (the bottom part of the mouse) and "body" (the curved top which fits in your hand).
