@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Custom_Symbol_Library)(type Legacy)(uri ${KIPRJMOD}/Custom_Symbol_Library.lib)(options "")(descr ""))
+  (lib (name depraz_board-rescue)(type Legacy)(uri ${KIPRJMOD}/depraz_board-rescue.lib)(options "")(descr ""))
+)

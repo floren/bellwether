@@ -1,0 +1,552 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Unix Mouse"
+Date ""
+Rev "0.2"
+Comp ""
+Comment1 "MISO/MOSI lines fixed"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 61C561A4
+P 10200 2500
+F 0 "J3" H 10280 2492 50  0000 L CNN
+F 1 "USB" H 10280 2401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10200 2500 50  0001 C CNN
+F 3 "~" H 10200 2500 50  0001 C CNN
+	1    10200 2500
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 2400 0    50   Input ~ 0
+USB_5V
+Text GLabel 9800 2500 0    50   Input ~ 0
+USB_D-
+Text GLabel 9800 2600 0    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	9800 2400 10000 2400
+Wire Wire Line
+	10000 2500 9800 2500
+Wire Wire Line
+	9800 2600 10000 2600
+Text GLabel 4300 2200 0    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	4350 2200 4300 2200
+Wire Wire Line
+	4350 2600 4350 2200
+$Comp
+L Custom_Symbol_Library:S-817B20AY-B2-U U4
+U 1 1 61C60144
+P 7950 1850
+F 0 "U4" H 7950 2215 50  0000 C CNN
+F 1 "S-817B20AY-B2-U" H 7950 2124 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 7750 2200 50  0001 C CNN
+F 3 "https://www.ablic.com/en/doc/datasheet/voltage_regulator/S817_E.pdf" H 7750 2200 50  0001 C CNN
+	1    7950 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Symbol_Library:PMW3389DM U5
+U 1 1 61C614FC
+P 9350 4600
+F 0 "U5" H 9425 3385 50  0000 C CNN
+F 1 "PMW3389DM" H 9425 3476 50  0000 C CNN
+F 2 "depraz_board:pmw3389" H 9150 4600 50  0001 C CNN
+F 3 "" H 9150 4600 50  0001 C CNN
+	1    9350 4600
+	-1   0    0    1   
+$EndComp
+Text GLabel 7350 1800 0    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	7350 1800 7550 1800
+Wire Wire Line
+	7950 2200 7950 2150
+$Comp
+L power:GND #PWR07
+U 1 1 61C639E4
+P 9900 2900
+F 0 "#PWR07" H 9900 2650 50  0001 C CNN
+F 1 "GND" H 9905 2727 50  0000 C CNN
+F 2 "" H 9900 2900 50  0001 C CNN
+F 3 "" H 9900 2900 50  0001 C CNN
+	1    9900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2700 9900 2900
+Wire Wire Line
+	9900 2700 10000 2700
+$Comp
+L Device:C_Small C1
+U 1 1 61C65997
+P 8500 2000
+F 0 "C1" H 8592 2046 50  0000 L CNN
+F 1 "0.1uF" H 8592 1955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 8500 2000 50  0001 C CNN
+F 3 "~" H 8500 2000 50  0001 C CNN
+	1    8500 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 1800 2    50   Input ~ 0
+2V
+Wire Wire Line
+	8350 1800 8500 1800
+Connection ~ 8500 1800
+Wire Wire Line
+	8500 1800 8850 1800
+Wire Wire Line
+	8500 2100 8500 2200
+Wire Wire Line
+	8500 2200 8250 2200
+Wire Wire Line
+	8500 1800 8500 1900
+$Comp
+L Device:C_Small C2
+U 1 1 61C6CC7B
+P 10500 4050
+F 0 "C2" H 10408 4004 50  0000 R CNN
+F 1 "4.7uF" H 10408 4095 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 10500 4050 50  0001 C CNN
+F 3 "~" H 10500 4050 50  0001 C CNN
+	1    10500 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10500 4150 9750 4150
+$Comp
+L power:GND #PWR02
+U 1 1 61C6D971
+P 4350 3950
+F 0 "#PWR02" H 4350 3700 50  0001 C CNN
+F 1 "GND" H 4355 3777 50  0000 C CNN
+F 2 "" H 4350 3950 50  0001 C CNN
+F 3 "" H 4350 3950 50  0001 C CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3950 4350 3800
+$Comp
+L power:GND #PWR06
+U 1 1 61C6DF10
+P 8250 2350
+F 0 "#PWR06" H 8250 2100 50  0001 C CNN
+F 1 "GND" H 8255 2177 50  0000 C CNN
+F 2 "" H 8250 2350 50  0001 C CNN
+F 3 "" H 8250 2350 50  0001 C CNN
+	1    8250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2350 8250 2200
+Connection ~ 8250 2200
+Wire Wire Line
+	8250 2200 7950 2200
+Text GLabel 10000 4050 2    50   Input ~ 0
+2V
+Wire Wire Line
+	10000 4050 9900 4050
+Wire Wire Line
+	9900 4050 9900 3950
+Wire Wire Line
+	9900 3950 9750 3950
+Connection ~ 9900 4050
+Wire Wire Line
+	9900 4050 9750 4050
+NoConn ~ 9750 3850
+NoConn ~ 8800 4350
+NoConn ~ 8800 4150
+NoConn ~ 9750 4350
+NoConn ~ 9750 4250
+Wire Wire Line
+	8800 4250 8600 4250
+Text GLabel 8150 4250 0    50   Input ~ 0
+2V
+$Comp
+L Device:R R4
+U 1 1 61C7BD6C
+P 8450 4250
+F 0 "R4" V 8657 4250 50  0000 C CNN
+F 1 "13" V 8566 4250 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 8380 4250 50  0001 C CNN
+F 3 "~" H 8450 4250 50  0001 C CNN
+	1    8450 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 2900 6400 2900
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 61C82B41
+P 5950 1550
+F 0 "J2" V 5914 1262 50  0000 R CNN
+F 1 "PIC Programmer" V 5823 1262 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 5950 1550 50  0001 C CNN
+F 3 "~" H 5950 1550 50  0001 C CNN
+	1    5950 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 1750 5850 2200
+Wire Wire Line
+	5850 2200 4350 2200
+Connection ~ 4350 2200
+$Comp
+L power:GND #PWR03
+U 1 1 61C88FE3
+P 5950 2000
+F 0 "#PWR03" H 5950 1750 50  0001 C CNN
+F 1 "GND" H 5955 1827 50  0000 C CNN
+F 2 "" H 5950 2000 50  0001 C CNN
+F 3 "" H 5950 2000 50  0001 C CNN
+	1    5950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2000 5950 1750
+Wire Wire Line
+	6050 1750 6050 2050
+Wire Wire Line
+	6050 2050 6400 2050
+Wire Wire Line
+	6400 2050 6400 2900
+Wire Wire Line
+	6150 1750 6150 2000
+Wire Wire Line
+	6150 2000 6450 2000
+Text GLabel 2200 3200 0    50   Input ~ 0
+USB_D-
+Text GLabel 2200 3100 0    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	2200 3100 2350 3100
+Wire Wire Line
+	2200 3200 2350 3200
+Wire Wire Line
+	2350 3300 1800 3300
+Wire Wire Line
+	1800 3300 1800 1750
+Wire Wire Line
+	1800 1750 5750 1750
+Wire Wire Line
+	9750 3650 10500 3650
+Wire Wire Line
+	10500 3650 10500 3950
+$Comp
+L power:GND #PWR08
+U 1 1 61CA829C
+P 10700 3750
+F 0 "#PWR08" H 10700 3500 50  0001 C CNN
+F 1 "GND" H 10705 3577 50  0000 C CNN
+F 2 "" H 10700 3750 50  0001 C CNN
+F 3 "" H 10700 3750 50  0001 C CNN
+	1    10700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3750 10700 3650
+Wire Wire Line
+	10700 3650 10500 3650
+Connection ~ 10500 3650
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 61CF3129
+P 1150 3600
+F 0 "J1" H 1068 3075 50  0000 C CNN
+F 1 "Switches" H 1068 3166 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1150 3600 50  0001 C CNN
+F 3 "~" H 1150 3600 50  0001 C CNN
+	1    1150 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 3300 1800 3300
+Connection ~ 1800 3300
+Wire Wire Line
+	2050 3500 2050 3400
+Wire Wire Line
+	2050 3400 2350 3400
+Wire Wire Line
+	1350 3500 1550 3500
+Wire Wire Line
+	1350 3700 1650 3700
+Wire Wire Line
+	1350 3400 1450 3400
+Wire Wire Line
+	1450 3400 1450 3600
+Wire Wire Line
+	1450 3600 1350 3600
+Wire Wire Line
+	1450 3600 1450 3800
+Wire Wire Line
+	1450 3800 1350 3800
+Connection ~ 1450 3600
+$Comp
+L power:GND #PWR01
+U 1 1 61D00C17
+P 1450 4000
+F 0 "#PWR01" H 1450 3750 50  0001 C CNN
+F 1 "GND" H 1455 3827 50  0000 C CNN
+F 2 "" H 1450 4000 50  0001 C CNN
+F 3 "" H 1450 4000 50  0001 C CNN
+	1    1450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 4000 1450 3800
+Connection ~ 1450 3800
+$Comp
+L Device:R R3
+U 1 1 61D03620
+P 1650 2800
+F 0 "R3" H 1720 2846 50  0000 L CNN
+F 1 "1M" H 1720 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1580 2800 50  0001 C CNN
+F 3 "~" H 1650 2800 50  0001 C CNN
+	1    1650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 2950 1650 3700
+$Comp
+L Device:R R2
+U 1 1 61D060DC
+P 1450 2800
+F 0 "R2" H 1520 2846 50  0000 L CNN
+F 1 "1M" H 1520 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1380 2800 50  0001 C CNN
+F 3 "~" H 1450 2800 50  0001 C CNN
+	1    1450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61D06733
+P 1250 2800
+F 0 "R1" H 1320 2846 50  0000 L CNN
+F 1 "1M" H 1320 2755 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 1180 2800 50  0001 C CNN
+F 3 "~" H 1250 2800 50  0001 C CNN
+	1    1250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2950 1250 3050
+Wire Wire Line
+	1250 3050 1350 3050
+Wire Wire Line
+	1350 3050 1350 3300
+Connection ~ 1350 3300
+Wire Wire Line
+	1450 2950 1450 3050
+Wire Wire Line
+	1450 3050 1550 3050
+Wire Wire Line
+	1550 3050 1550 3500
+Connection ~ 1550 3500
+Wire Wire Line
+	1550 3500 2050 3500
+Wire Wire Line
+	1250 2650 1250 2500
+Wire Wire Line
+	1250 2500 1450 2500
+Wire Wire Line
+	1650 2500 1650 2650
+Connection ~ 1450 2500
+Wire Wire Line
+	1450 2500 1650 2500
+Wire Wire Line
+	1450 2500 1450 2650
+Text GLabel 1450 2200 1    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	1450 2200 1450 2500
+Wire Wire Line
+	8150 4250 8250 4250
+$Comp
+L Logic_LevelTranslator:TXB0104D U2
+U 1 1 61D22BFC
+P 7450 3450
+F 0 "U2" H 7450 2569 50  0000 C CNN
+F 1 "TXB0104D" H 7450 2660 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7450 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 7560 3545 50  0001 C CNN
+	1    7450 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 4150 8250 4250
+Wire Wire Line
+	7550 4150 7950 4150
+Connection ~ 8250 4250
+Wire Wire Line
+	8250 4250 8300 4250
+Text GLabel 7350 4300 3    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	7350 4300 7350 4150
+$Comp
+L power:GND #PWR04
+U 1 1 61D27BD9
+P 7850 2750
+F 0 "#PWR04" H 7850 2500 50  0001 C CNN
+F 1 "GND" H 7855 2577 50  0000 C CNN
+F 2 "" H 7850 2750 50  0001 C CNN
+F 3 "" H 7850 2750 50  0001 C CNN
+	1    7850 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2750 7850 2750
+Wire Wire Line
+	7850 3750 8250 3750
+Wire Wire Line
+	8250 3750 8250 4050
+Wire Wire Line
+	8250 4050 8800 4050
+Wire Wire Line
+	7050 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 3200
+Wire Wire Line
+	6700 3550 7050 3550
+Wire Wire Line
+	7850 3550 8300 3550
+Wire Wire Line
+	8300 3550 8300 3950
+Wire Wire Line
+	8300 3950 8800 3950
+Wire Wire Line
+	8350 3850 8350 3350
+Wire Wire Line
+	8350 3350 7850 3350
+Wire Wire Line
+	7050 3350 6750 3350
+Wire Wire Line
+	6800 3150 7050 3150
+Wire Wire Line
+	7850 3150 8450 3150
+Wire Wire Line
+	8450 3150 8450 3750
+Wire Wire Line
+	8450 3750 8800 3750
+Wire Wire Line
+	6450 2000 6450 3000
+Wire Wire Line
+	6400 2900 6800 2900
+Wire Wire Line
+	6800 2900 6800 3150
+Connection ~ 6400 2900
+Wire Wire Line
+	8350 3850 8800 3850
+$Comp
+L Logic_LevelTranslator:TXB0104D U3
+U 1 1 61D4A1E7
+P 7750 5350
+F 0 "U3" H 7750 4469 50  0000 C CNN
+F 1 "TXB0104D" H 7750 4560 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7750 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/txb0104.pdf" H 7860 5445 50  0001 C CNN
+	1    7750 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61D4CA3A
+P 8200 4650
+F 0 "#PWR05" H 8200 4400 50  0001 C CNN
+F 1 "GND" H 8205 4477 50  0000 C CNN
+F 2 "" H 8200 4650 50  0001 C CNN
+F 3 "" H 8200 4650 50  0001 C CNN
+	1    8200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4650 7750 4650
+Text GLabel 7650 6150 0    50   Input ~ 0
+USB_5V
+Wire Wire Line
+	7650 6150 7650 6050
+Text GLabel 7900 6150 2    50   Input ~ 0
+2V
+Wire Wire Line
+	7900 6150 7850 6150
+Wire Wire Line
+	7850 6150 7850 6050
+Wire Wire Line
+	8150 5650 9950 5650
+Wire Wire Line
+	9950 5650 9950 3750
+Wire Wire Line
+	9950 3750 9750 3750
+Wire Wire Line
+	8800 3650 8650 3650
+Wire Wire Line
+	8650 3650 8650 5450
+Wire Wire Line
+	8650 5450 8150 5450
+Wire Wire Line
+	7950 3950 7950 4150
+Wire Wire Line
+	7850 3950 7950 3950
+Connection ~ 7950 4150
+Wire Wire Line
+	7950 4150 8250 4150
+Wire Wire Line
+	8200 5850 8200 6050
+Wire Wire Line
+	8200 6050 7850 6050
+Connection ~ 7850 6050
+Wire Wire Line
+	8200 5850 8150 5850
+Wire Wire Line
+	6650 3200 6350 3200
+Wire Wire Line
+	6350 3000 6450 3000
+Wire Wire Line
+	2200 3500 2350 3500
+$Comp
+L MCU_Microchip_PIC16:PIC16F1454-IP U1
+U 1 1 61C51DE3
+P 4350 3200
+F 0 "U1" H 4350 3981 50  0000 C CNN
+F 1 "PIC16F1454-IP" H 4350 3890 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4350 3200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41639A.pdf" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3700 2200 3700
+Connection ~ 1650 3700
+Wire Wire Line
+	6750 3100 6750 3350
+Wire Wire Line
+	6350 3100 6750 3100
+Wire Wire Line
+	6450 3000 6700 3000
+Wire Wire Line
+	6700 3000 6700 3550
+Connection ~ 6450 3000
+Wire Wire Line
+	2200 3500 2200 3700
+Wire Wire Line
+	6350 3400 6350 5450
+Wire Wire Line
+	6350 5450 7350 5450
+Wire Wire Line
+	6500 3300 6500 5650
+Wire Wire Line
+	6350 3300 6500 3300
+Wire Wire Line
+	6500 5650 7350 5650
+$EndSCHEMATC

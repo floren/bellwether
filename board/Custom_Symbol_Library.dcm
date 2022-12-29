@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PMW3389DM
+F https://www.broadband.se/media/productattach/p/i/pixart_pmw3389dm-t3qu_-_productbrief_1374785_8.pdf
+$ENDCMP
+#
+$CMP S-817B20AY-B2-U
+D Linear Voltage Regulator IC 2V
+K LDO, 2V
+F https://www.ablic.com/en/doc/datasheet/voltage_regulator/S817_E.pdf
+$ENDCMP
+#
+#End Doc Library

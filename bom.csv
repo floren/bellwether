@@ -1,0 +1,12 @@
+Reference, Quantity, Value, Footprint, Datasheet
+C1 ,1,"0.1uF","Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm","~"
+C2 ,1,"4.7uF","Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm","~"
+J1 ,1,"Switches","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical","~"
+J2 ,1,"PIC Programmer","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","~"
+J3 ,1,"USB","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+R1 R2 R3 ,3,"1M","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical","~"
+R4 ,1,"13","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical","~"
+U1 ,1,"PIC16F1454-IP","Package_DIP:DIP-14_W7.62mm","http://ww1.microchip.com/downloads/en/DeviceDoc/41639A.pdf"
+U2 U3 ,2,"TXB0104D","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","http://www.ti.com/lit/ds/symlink/txb0104.pdf"
+U4 ,1,"S-817B20AY-B2-U","Package_TO_SOT_THT:TO-92L_Inline","https://www.ablic.com/en/doc/datasheet/voltage_regulator/S817_E.pdf"
+U5 ,1,"PMW3389DM","depraz_board:pmw3389",""
